@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Сэндвич-панели</title>
+		<meta name="robots" content="noindex" />
+		<link rel="stylesheet" href="./assets/css/nouislider.min.css">
+		<link rel="stylesheet" href="./assets/css/main.css">
+		
+	</head>
+	<body>
+		<header>
+			<div class="container header">
+				<div class="header__logo">
+					<a href="/mprestig/index.html" class="logo"><img src="./assets/images/logo.svg" alt="Производство сэндвич-панелей"></a>
+					<div class="header__slogan">Производство сэндвич-панелей</div>
+					<div class="header__phone only-tablet"><a href="tel:+73832304580">+7 (383) 230-45-80</a></div>
+				</div>
+				<div class="header_burger only-tablet" id="burger">
+					<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+					<label class="burger" for="burger-checkbox"></label>
+				</div>
+				<div class="header__right">
+					<div class="header__info">
+						<nav>
+							<ul>
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Производство</a></li>
+								<li><a href="#">Калькулятор</a></li>
+								<li><a href="#">Наши объекты</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__content">
+						<div class="header__block address-search">
+							<div class="header__content-address city-open">
+								Новосибирск, <b>ул. Омский тракт, 17</b>
+
+								<div class="cities">
+									<div class="cities__inner content-page">
+										<ul>
+											<li class="active"><a href="#">Новосибирск</a></li>
+											<li><a href="#">Иркутск</a></li>
+											<li><a href="#">Красноярск</a></li>
+											<li><a href="#">Тюмень</a></li>
+											<li><a href="#">Улан-Удэ</a></li>
+											<li><a href="#">Воронеж</a></li>
+											<li><a href="#">Саратов</a></li>
+											<li><a href="#">Санкт-Петербург</a></li>
+											<li><a href="#">Иваново</a></li>
+											<li><a href="#">Челябинск</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="header__content-time">
+								пн-пт: 8:00 - 17:00
+							</div>
+							<div class="header__content-search">
+								<input type="search" value="Поиск" placeholder="Поиск" name="header__search">
+							</div>
+						</div>
+						<div class="header__block">
+							<div class="header__content-phone">
+								<a href="tel:+73832304580">+7 (383) 230-45-80</a>
+							</div>
+							<div class="header__content-email">
+								<a href="mailto:mail5@metall-prestig.ru">mail5@metall-prestig.ru</a>
+							</div>
+						</div>
+						<div class="header__block">
+							<div class="header__content-button">
+								<a href="#" class="btn --white">Обратный звонок</a>
+							</div>
+						</div>
+						<div class="header__content-socail">
+							<a href="#"><img src="./assets/images/icons/icon_max.svg" alt="MAX"></a>
+							<a href="#"><img src="./assets/images/icons/icon_tg.svg" alt="TG"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="section container breadcrumbs">
+				<div class="breadcrumbs__item">
+					<a href="/" data-fragment="breacrumb-home">
+					<span property="name">Главная</span>
+					</a>
+					<meta property="position" content="1">
+				</div>
+				<div class="breadcrumbs__item active">
+					<span property="name">Сэндвич-панели</span>
+					<meta property="position" content="2">
+				</div>
+			</section>
+			<section class="section container content-page">
+				<h1>Сэндвич-панели</h1>
+			</section>
+			<section class="section container catalog-pages --catalog">
+				<div class="sidebar">
+					<div class="filter" id="filter">
+						<div class="filter-panel">
+							<div class="filter__name">
+								Цена, руб
+							</div>
+							<div class="filter__content">
+								<div class="price-input-container number-slider__wrapper">	
+									<div class="slider">						
+										<div id="price-range__slider" class="number__slider"></div>
+									</div>
+									<div class="range-top price-input">
+										<input type="number" class="min-input" value="0" data-limit="0" id="price-range__min">
+										<div class="separator"></div>
+										<input type="number" class="max-input" value="15993" data-limit="15993" id="price-range__max">				
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter-panel">
+							<div class="filter__name">
+								Толщина утеплителя, мм
+							</div>
+							<div class="filter__content">
+								<div class="price-input-container number-slider__wrapper">	
+									<div class="slider">						
+										<div id="thick__slider" class="number__slider"></div>
+									</div>
+									<div class="range-top price-input">
+										<input type="number" class="min-input" value="0" data-limit="0" id="thick__min">
+										<div class="separator"></div>
+										<input type="number" class="max-input" value="15993" data-limit="15993" id="thick__max">				
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter-panel accordion-item">
+							<div class="filter__name accordion-header">
+								Назначение
+							</div>
+							<div class="filter__content accordion-content">
+								<div class="form-row">
+									<div class="section-item form-field">
+										<input value="gable" type="radio" id="nap-1" name="type-of-nap">
+										<label for="nap-1">Минеральная вата (23)</label>
+									</div>
+									<div class="section-item form-field">
+										<input value="lean-to" type="radio" id="nap-2" name="type-of-nap">
+										<label for="nap-2">Пенополистирол (33) </label>
+									</div>
+									<div class="section-item form-field">
+										<input value="lean-to" type="radio" id="nap-3" name="type-of-nap">
+										<label for="nap-3">Пенополиизоцианурат (PIR) (17) </label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter-panel accordion-item active">
+							<div class="filter__name accordion-header">
+								Наполнитель
+							</div>
+							<div class="filter__content accordion-content">
+								<div class="form-row">
+									<div class="section-item form-field">
+										<input value="gable" type="radio" id="nap-4" name="type-of-nap">
+										<label for="nap-4">Минеральная вата (23)</label>
+									</div>
+									<div class="section-item form-field">
+										<input value="lean-to" type="radio" id="nap-5" name="type-of-nap">
+										<label for="nap-5">Пенополистирол (33) </label>
+									</div>
+									<div class="section-item form-field">
+										<input value="lean-to" type="radio" id="nap-6" name="type-of-nap">
+										<label for="nap-6">Пенополиизоцианурат (PIR) (17) </label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter-panel accordion-item">
+							<div class="filter__name accordion-header">
+								Тип соединения
+							</div>
+							<div class="filter__content accordion-content">
+								<div class="form-row">
+									<div class="section-item form-field">
+										<input value="gable" type="radio" id="nap-7" name="type-of-nap">
+										<label for="nap-7">Минеральная вата (23)</label>
+									</div>
+									<div class="section-item form-field">
+										<input value="lean-to" type="radio" id="nap-8" name="type-of-nap">
+										<label for="nap-8">Пенополистирол (33) </label>
+									</div>
+									<div class="section-item form-field">
+										<input value="lean-to" type="radio" id="nap-9" name="type-of-nap">
+										<label for="nap-9">Пенополиизоцианурат (PIR) (17) </label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter-panel acc accordion-item">
+							<div class="filter__name accordion-header">
+								Тип металла
+							</div>
+							<div class="filter__content accordion-content">
+								<div class="form-row">
+									<div class="section-item form-field">
+										<input value="gable" type="radio" id="nap-10" name="type-of-nap">
+										<label for="nap-10">Минеральная вата (23)</label>
+									</div>
+									<div class="section-item form-field">
+										<input value="lean-to" type="radio" id="nap-11" name="type-of-nap">
+										<label for="nap-11">Пенополистирол (33) </label>
+									</div>
+									<div class="section-item form-field">
+										<input value="lean-to" type="radio" id="nap-12" name="type-of-nap">
+										<label for="nap-12">Пенополиизоцианурат (PIR) (17) </label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter-panel acc accordion-item">
+							<div class="filter__name accordion-header">
+								Стандартные цвета RAL
+							</div>
+							<div class="filter__content accordion-content">
+								<div class="colors__list">
+									<div class="color__item">
+										<div class="color RAL-9001"></div>
+										<div class="name">RAL 9001</div>
+									</div>
+									<div class="color__item">
+										<div class="color RAL-9002"></div>
+										<div class="name">RAL 9002</div>
+									</div>
+									<div class="color__item">
+										<div class="color RAL-7004"></div>
+										<div class="name">RAL 7004</div>
+									</div>
+									<div class="color__item">
+										<div class="color RAL-9001"></div>
+										<div class="name">RAL 9001</div>
+									</div>
+									<div class="color__item">
+										<div class="color RAL-9002"></div>
+										<div class="name">RAL 9002</div>
+									</div>
+									<div class="color__item">
+										<div class="color RAL-7004"></div>
+										<div class="name">RAL 7004</div>
+									</div>
+									<div class="color__item">
+										<div class="color RAL-9001"></div>
+										<div class="name">RAL 9001</div>
+									</div>
+									<div class="color__item">
+										<div class="color RAL-9002"></div>
+										<div class="name">RAL 9002</div>
+									</div>
+									<div class="color__item">
+										<div class="color RAL-7004"></div>
+										<div class="name">RAL 7004</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter-bottom">
+							<a href="#" class="btn">Показать</a>
+							<a href="#">Сбросить</a>
+						</div>
+					</div>
+				</div>
+				<div class="content-area catalog">
+					<div class="products__tabs">
+						<div class="tabs card__details">
+							<div class="tabs-list">
+								<ul>
+									<li class="tab-item active" data-tab="tabs-1">Назначение</li>
+									<li class="tab-item" data-tab="tabs-2">Наполнитель</li>
+									<li class="tab-item" data-tab="tabs-3">Тип соединения</li>
+									<li class="tab-item" data-tab="tabs-4">Тип панели</li>
+									<li class="tab-item" data-tab="tabs-5">Тип металла</li>
+								</ul>
+							</div>
+							<div class="details-tabs__content">
+								<div class="tab-content active accordion-item" data-tab="tabs-1">
+									<div class="card__details-acc__header accordion-header active">
+										Назначение
+									</div>
+									<div class="card__details-acc__content accordion-content">
+										<div class="tags__list">
+											<a href="#">Стеновые</a>
+											<a href="#">Кровельные</a>
+											<a href="#">Для гаража</a>
+											<a href="#">Для дома</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content accordion-item" data-tab="tabs-2">
+									<div class="card__details-acc__header accordion-header">
+										Наполнитель
+									</div>
+									<div class="card__details-acc__content accordion-content">
+										<div class="tags__list">
+											<a href="#">Кровельные</a>
+											<a href="#">Для гаража</a>
+											<a href="#">Для дома</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content accordion-item" data-tab="tabs-3">
+									<div class="card__details-acc__header accordion-header">
+										Тип соединения
+									</div>
+									<div class="card__details-acc__content accordion-content">
+										<div class="tags__list">
+											<a href="#">Стеновые</a>
+											<a href="#">Для гаража</a>
+											<a href="#">Для дома</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content accordion-item" data-tab="tabs-4">
+									<div class="card__details-acc__header accordion-header">
+										Тип панели
+									</div>
+									<div class="card__details-acc__content accordion-content">
+										<div class="tags__list">
+											<a href="#">Стеновые</a>
+											<a href="#">Кровельные</a>
+											<a href="#">Для дома</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content accordion-item" data-tab="tabs-5">
+									<div class="card__details-acc__header accordion-header">
+										Тип металла
+									</div>
+									<div class="card__details-acc__content accordion-content">
+										<div class="tags__list">
+											<a href="#">Стеновые</a>
+											<a href="#">Кровельные</a>
+											<a href="#">Для гаража</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="products__extra only-mobile">
+						<div class="btn --filter" id="filter-button">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.6081 16H6.32602C6.01125 15.899 5.79288 15.6529 5.79288 15.3047L5.79163 9.31688C5.79163 8.99599 5.68852 8.70984 5.50117 8.45272L0.12118 1.05915C-0.0410247 0.835952 -0.0326421 0.557983 0.100223 0.331519C0.208359 0.147569 0.422117 0 0.694553 0L15.3512 0.000817557C15.6215 0.000817557 15.8361 0.197849 15.9258 0.378529C16.0373 0.602948 16.026 0.857617 15.8722 1.06855L10.5052 8.44332C10.3153 8.70412 10.2084 8.99231 10.2084 9.31525L10.2055 14.2157C10.2055 14.4748 10.0563 14.7148 9.81069 14.8064L6.6081 16Z" fill="#C12814"/>
+							</svg>
+							Фильтры
+						</div>
+						<select name="sort">
+							<option>Сортировать по:</option>
+							<option value="popular">по популярности</option>
+							<option value="desc">по уменьшению цены</option>
+							<option value="asc">по увеличению цены</option>
+						</select>
+					</div>
+					<div class="products__sort only-desktop">
+						<div class="products__sort-title">Сортировать:</div>
+						<div class="products__sort-popular sort active">по популярности</div>
+						<div class="products__sort-desc sort">по уменьшению цены</div>
+						<div class="products__sort-asc sort">по увеличению цены</div>
+					</div>
+					<div class="products__list">
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-1.png" alt="Сэндвич-панель ПКСГ 120 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">Сэндвич-панель ПКСГ 120 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003000383</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Гофрированная</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 750 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-2.png" alt="Сэндвич-панель ПСС 120 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">Сэндвич-панель ПСС 120 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003443398</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Стеновая</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 1 050 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-3.png" alt="Сэндвич-панель ПКМГ 150 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">Сэндвич-панель ПКМГ 150 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003000383</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Гофрированная</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 750 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-4.png" alt="ПКСГ 300 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">ПКСГ 300 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003443395</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Кровельная гофрированная</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 1 100 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-1.png" alt="Сэндвич-панель ПКСГ 120 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">Сэндвич-панель ПКСГ 120 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003000383</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Гофрированная</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 750 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-2.png" alt="Сэндвич-панель ПСС 120 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">Сэндвич-панель ПСС 120 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003443398</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Стеновая</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 1 050 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-3.png" alt="Сэндвич-панель ПКМГ 150 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">Сэндвич-панель ПКМГ 150 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003000383</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Гофрированная</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 750 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-4.png" alt="ПКСГ 300 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">ПКСГ 300 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003443395</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Кровельная гофрированная</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 1 100 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-1.png" alt="Сэндвич-панель ПКСГ 120 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">Сэндвич-панель ПКСГ 120 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003000383</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Гофрированная</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 750 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-2.png" alt="Сэндвич-панель ПСС 120 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">Сэндвич-панель ПСС 120 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003443398</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Стеновая</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 1 050 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-3.png" alt="Сэндвич-панель ПКМГ 150 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">Сэндвич-панель ПКМГ 150 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003000383</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Гофрированная</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 750 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__item-img">
+								<img src="./assets/images/popular_item-4.png" alt="ПКСГ 300 мм">
+							</div>
+							<div class="products__item-info">
+								<div class="products__item-title">
+									<a href="">ПКСГ 300 мм</a>
+								</div>
+								<div class="products__options">
+									<div class="products__options-item sku">
+										<div class="products__options-key">Артикул</div>
+										<div class="products__options-value">100003443395</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Утеплитель</div>
+										<div class="products__options-value">Пенополистирол</div>
+									</div>
+									<div class="products__options-item">
+										<div class="products__options-key">Тип</div>
+										<div class="products__options-value">Кровельная гофрированная</div>
+									</div>
+								</div>
+								<div class="products__bottom">
+									<div class="products__bottom-price">от 1 100 руб./м<sup>2</sup></div>
+									<div class="products__bottom-button"><a href="#" class="btn">Заказать</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section pagination">
+						<ul>
+							<li class="arrow --left disabled">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M40 0H0V40H40V0Z" fill="#FF2A00"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M23.3295 20L29.2486 9.01733H16.6705L10.7515 20L16.6705 30.9827H29.2486L23.3295 20Z" fill="white"/>
+								</svg>
+							</li>
+							<li class="active">1</li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li class="arrow --right">
+								<a href="#">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 40L40 40L40 3.49691e-06L3.49691e-06 0L0 40Z" fill="#FF2A00"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6705 20L10.7514 30.9827L23.3295 30.9827L29.2485 20L23.3295 9.01735L10.7514 9.01735L16.6705 20Z" fill="white"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="section container seo-text content-page">
+						<p>В наличии большой выбор трехслойных сэндвич-панелей с доставкой по Санкт-Петербургу, Ленинградской области и другим регионам России.</p>
+						<p>Этот современный материал выбирают для строительства быстровозводимых зданий, различных промышленных сооружений, складов, торговых объектов и других помещений. Используется для возведения стен, фасадов и применяется для укладки кровли.</p>
+						<p>В компании «Металл Престиж СПБ» можно купить сэндвич-панели, изготовленные на собственном оборудовании в строгом соответствии с ГОСТ, с учетом всех требований безопасности и прочностных характеристик. Промежуточный слой утеплителя имеет высокую плотность, обладает отличной теплоизоляцией, звукоизоляцией и низкой теплопроводностью. Такая система обеспечивает хорошую защиту от влаги, температур и различных нагрузок.</p>
+						<p><b>Преимущества наших сэндвич-панелей:</b></p>
+						<ul>
+							<li>Высокое качество материалов и сборки</li>
+							<li>Отличные тепло- и звукоизоляционные свойства</li>
+							<li>Низкая стоимость по сравнению с кирпичом и другими материалами</li>
+							<li>Быстрый монтаж и простота установки</li>
+							<li>Легкий вес, что снижает нагрузку на фундамент</li>
+							<li>Долгий срок службы</li>
+							<li>Прочность, надежность, устойчивость к деформациям</li>
+							<li>Широкий выбор размеров, цветов и профилей</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container footer">
+				<div class="footer__logo">
+					<a href="/"><img src="./assets/images/logo__footer.svg" alt="Производство сэндвич-панелей"></a>
+				</div>
+				<div class="footer__info">
+					<div class="footer__slogan">Производство и продажа <br>сэндвич-панелей</div>
+					<div class="footer__btn"><a href="#" class="btn --grey">Оставить заявку</a></div>
+				</div>
+				<div class="footer__city city-open">
+					Новосибирск
+
+					<div class="cities">
+						<div class="cities__inner content-page">
+							<ul>
+								<li class="active"><a href="#">Новосибирск</a></li>
+								<li><a href="#">Иркутск</a></li>
+								<li><a href="#">Красноярск</a></li>
+								<li><a href="#">Тюмень</a></li>
+								<li><a href="#">Улан-Удэ</a></li>
+								<li><a href="#">Воронеж</a></li>
+								<li><a href="#">Саратов</a></li>
+								<li><a href="#">Санкт-Петербург</a></li>
+								<li><a href="#">Иваново</a></li>
+								<li><a href="#">Челябинск</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__details">
+					<p><b>ИНН:</b> 5406789441</p>
+					<p><b>ОГРН:</b> 5400000000</p>
+				</div>
+				<div class="footer__contacts contacts">
+					<div class="contacts__phone footer__phone">
+						<a href="tel:+73832304580">+7 (383) 230-45-80</a>
+					</div>
+					<div class="contacts__address footer__address">
+						<p>ул. Омский тракт, 17</p>
+						<p><a href="#">схема проезда</a></p>
+					</div>
+					<div class="contacts__time footer__time">
+						Время работы: <b>пн-пт: 8:00 - 17:00</b>
+					</div>
+					<div class="contacts__email footer__email">
+						<a href="mailto:mail5@metall-prestig.ru">mail5@metall-prestig.ru</a>
+					</div>
+				</div>
+				<div class="footer__menu">
+					<ul class="menu-1 only-desktop">
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Производство</a></li>
+						<li><a href="#">Калькулятор</a></li>
+						<li><a href="#">Наши объекты</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="menu-2 only-desktop">
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Сертификаты</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Вопрос-ответ</a></li>
+					</ul>
+					<ul class="menu-3 only-desktop">
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Реквизиты компании</a></li>
+						<li><a href="#">Нормативно-техническая документация</a></li>
+					</ul>
+					<ul class="menu-4">
+						<li><a href="#">Карта сайта</a></li>
+						<li><a href="#">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+				<div class="footer__copyright">
+					Copyright (© Металл Престиж, 2015-2026)
+				</div>
+				<div class="footer__links">
+					<a href="#">Согласие на обработку персональных данных</a>
+					<a href="#">Разработка сайта – Альтера</a>
+				</div>
+			</div>
+		</footer>
+		<div class="mobile-burger">
+			<div class="mobile-burger__inner">
+				<div class="close"></div>
+					<div class="mobile-burger__top">
+						<div class="mobile-burger__logo">
+							<img src="./assets/images/logo__mobile.svg" alt="Производство сэндвич-панелей">
+						</div>
+						<div class="mobile-burger__city city-open">
+							Новосибирск
+
+							<div class="cities">
+								<div class="cities__inner content-page">
+									<ul>
+										<li class="active"><a href="#">Новосибирск</a></li>
+										<li><a href="#">Иркутск</a></li>
+										<li><a href="#">Красноярск</a></li>
+										<li><a href="#">Тюмень</a></li>
+										<li><a href="#">Улан-Удэ</a></li>
+										<li><a href="#">Воронеж</a></li>
+										<li><a href="#">Саратов</a></li>
+										<li><a href="#">Санкт-Петербург</a></li>
+										<li><a href="#">Иваново</a></li>
+										<li><a href="#">Челябинск</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="mobile-burger__button">
+							<a href="#" class="btn">Обратный звонок</a>
+						</div>
+						<div class="mobile-burger__social">
+							<a href="#"><img src="./assets/images/icons/max.svg" alt="MAX"></a>
+							<a href="#"><img src="./assets/images/icons/tg.svg" alt="TG"></a>
+						</div>
+						<div class="mobile-burger__search">
+							<form>
+								<div class="form-field">
+									<label><input type="search" value="Поиск"></label>
+								</div>
+								<button class="search">Поиск</button>
+							</form>
+						</div>
+					</div>
+					<div class="mobile-burger__menu">
+						<ul>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Производство</a></li>
+							<li><a href="#">Калькулятор</a></li>
+							<li><a href="#">Наши объекты</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="mobile-burger__contacts contacts">
+						<div class="contacts__phone">
+							<a href="tel:+73832304580">+7 (383) 230-45-80</a>
+						</div>
+						<div class="contacts__email">
+							<a href="mailto:mail5@metall-prestig.ru">mail5@metall-prestig.ru</a>
+						</div>
+						<div class="contacts__address">
+							<p>ул. Омский тракт, 17</p>
+							<p><a href="#">схема проезда</a></p>
+						</div>
+						<div class="contacts__time">
+							Время работы: <b>пн-пт: 8:00 - 17:00</b>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="mobile-filter"><div class="close"></div><div class="mobile-filter__inner"></div></div>
+		<div class="overlay"></div>
+		<script src="./assets/js/swiper-bundle.min.js"></script>
+		<script src="./assets/js/fancybox.umd.js"></script>
+		<script src="./assets/js/nouislider.min.js"></script>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
